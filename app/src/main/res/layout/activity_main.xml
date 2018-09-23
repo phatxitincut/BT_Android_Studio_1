@@ -1,18 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_margin="16dp"
+    android:orientation="horizontal"
+    android:weightSum="7"
+    tools:context=".MainActivity"
+    android:baselineAligned="false">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:weightSum="10"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:id="@+id/IMG_hinh1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:scaleType="centerCrop"
+            android:src="@drawable/thu_duc" />
+
+        <ImageView
+            android:id="@+id/IMG_hinh2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:scaleType="centerCrop"
+            android:src="@drawable/thu_duc_2" />
+
+        <RadioGroup
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <RadioButton
+                android:id="@+id/Tham_quan"
+                android:layout_weight="1"
+                android:text="Tham quan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/An_uong"
+                android:layout_weight="1"
+                android:text="Ăn uống"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/Vui_choi"
+                android:layout_weight="1"
+                android:text="Vui chơi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="7"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_suoitien"
+            android:layout_weight="1"
+            android:backgroundTint="#439cea"
+            android:text="KDL Suối Tiên"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <Button
+            android:id="@+id/btn_langdh"
+            android:layout_weight="1"
+            android:backgroundTint="#439cea"
+            android:text="Làng Đại Học"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <Button
+            android:id="@+id/btn_hoda"
+            android:layout_weight="1"
+            android:backgroundTint="#439cea"
+            android:text="Hồ Đá"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <ImageButton
+            android:layout_weight="2"
+            android:src="@drawable/thong_tin"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+    </LinearLayout>
+</LinearLayout>
