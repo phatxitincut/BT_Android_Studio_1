@@ -23,7 +23,7 @@
             android:layout_height="0dp"
             android:layout_weight="4"
             android:scaleType="centerCrop"
-            android:src="@drawable/thu_duc" />
+             />
 
         <ImageView
             android:id="@+id/IMG_hinh2"
@@ -31,33 +31,36 @@
             android:layout_height="0dp"
             android:layout_weight="4"
             android:scaleType="centerCrop"
-            android:src="@drawable/thu_duc_2" />
+             />
 
         <RadioGroup
-            android:weightSum="3"
-            android:orientation="horizontal"
-            android:layout_weight="1"
+            android:id="@+id/Group"
             android:layout_width="match_parent"
-            android:layout_height="0dp">
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
 
             <RadioButton
                 android:id="@+id/Tham_quan"
-                android:layout_weight="1"
-                android:text="Tham quan"
                 android:layout_width="0dp"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Tham quan" />
+
             <RadioButton
                 android:id="@+id/An_uong"
-                android:layout_weight="1"
-                android:text="Ăn uống"
                 android:layout_width="0dp"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Ăn uống" />
+
             <RadioButton
                 android:id="@+id/Vui_choi"
-                android:layout_weight="1"
-                android:text="Vui chơi"
                 android:layout_width="0dp"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Vui chơi" />
 
         </RadioGroup>
 
